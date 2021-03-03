@@ -10,6 +10,7 @@ namespace CityHomework
         public int Population { get; set; }
         public List<Street> Streets { get; set; }
         public List<Quarter> Quarters { get; set; }
+        public List<Building> Buildings { get; set; }
 
         public City(string name, int population)
         {
@@ -17,14 +18,19 @@ namespace CityHomework
             Population = population;
         }
 
-        public void addStreet(string streetName, double streetLength)
+        public void addStreet(Street street)
         {
-            Streets.Add(new Street(streetName, streetLength));
+            Streets.Add(street);
         }
 
-        public void addQuarter(string quarterName, double quarterArea)
+        public void addQuarter(Quarter quarter)
         {
-            Quarters.Add(new Quarter(quarterName, quarterArea));
+            Quarters.Add(quarter);
+        }
+
+        public void addBuilding(Building building)
+        {
+            Buildings.Add(building);
         }
 
         public void incrementPopulation()

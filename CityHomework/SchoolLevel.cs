@@ -9,6 +9,6 @@ namespace CityHomework
         Primary,
         Secondary,
         HighSchool,
-        Universiry
+        University
     }
 }

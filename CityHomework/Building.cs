@@ -8,5 +8,6 @@ namespace CityHomework
     {
         public string Name { get; set; }
         public double Height { get; set; }
+        public DateTime BuildDate { get; set; }
     }
 }
